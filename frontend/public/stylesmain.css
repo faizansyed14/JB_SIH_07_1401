@@ -120,7 +120,7 @@ section .title::before {
     display: block;
     color:rgb(0, 0, 0);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
@@ -133,7 +133,7 @@ section .title::before {
 
 /* menu btn styling */
 .menu-btn{
-    color:white;
+    color:rgb(0, 0, 0);
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -259,6 +259,8 @@ section .title::before {
 
 
 
+
+
 /* footer section styling */
 footer{
     align-items: center;
@@ -339,6 +341,7 @@ footer{
   .wrapper .button:nth-child(5) span{
     color: #ff0000;
 }
+
 
 
 
@@ -512,5 +515,76 @@ footer{
 }
 }
 #myVideo{
-    width: 220vh;
+    height: 100vh;
+    display: flex;
+    background: no-repeat center;
+    color: #fff;
+    min-height: 850px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
 }
+
+@media (max-width: 1000px) {
+    #myVideo{
+        width: 150vh;
+
+    }
+
+}
+
+h1 {
+    font-family: "Montserrat Medium";
+    padding-bottom: 200p;
+    max-width: 80ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 1.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 1.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 1.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 1.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 1.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+ 
+ 
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
